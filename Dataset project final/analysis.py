@@ -1,6 +1,7 @@
 # analysis page
 # Importing
 import streamlit as st  # Used to build the web app
+from streamlit_theme import st_theme
 import pandas as pd  # Used for data manipulation and analysis
 import matplotlib.pyplot as plt  # Used for plotting graphs
 import seaborn as sns  # Used for advanced visualizations
