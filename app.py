@@ -84,7 +84,12 @@ with col1 :
     st.subheader('Made by Syntax Squad')
     with st.container(border = True):
         st.subheader('About Us')
-        st.text("Our team was first formed in STP’s labs. With the guidance of our dear moderators, we learned the fundamentals of the Python programming language, various libraries, and essential soft skills such as presentation skills, time management, team work, using Canva, LinkedIn, and much more. Most importantly, we developed the ability to search for information independently, teach ourselves new concepts, and share knowledge with one another. This project represents our graduation project. Using what we learned in python and more, We hope you like it and find it sophisticated enough to match STP’s level of professionalism and cleverness.")
+        st.text(
+"""
+Our team was first formed in STP’s labs. With the guidance of our dear moderators, we learned the fundamentals of the Python programming language, various libraries,
+and essential soft skills such as presentation skills, time management, team work, using Canva, LinkedIn, and much more.
+Most importantly, we developed the ability to search for information independently, teach ourselves new concepts, and share knowledge with one another. This project represents our graduation project.
+Using what we learned in python and more, We hope you like it and find it sophisticated enough to match STP’s level of professionalism and cleverness.")
 with col2 :
     st.image('syntax squad logo.jpeg', use_container_width=True)
 
