@@ -279,12 +279,14 @@ st.header("Summary and recommendation")
 with st.expander('View summary & recommendation') :
     with st.container(border = True):
         st.text(
-            """In conclusion, the data demonstrates that the AI-recommended learning path provided a decent academic advantage by shifting student performance into higher, more consistent scoring brackets.
+"""
+In conclusion, the data demonstrates that the AI-recommended learning path provided a decent academic advantage by shifting student performance into higher, more consistent scoring brackets.
 While traditional metrics like 'time spent' or 'past GPA' showed little to no correlation with current success, the adherence to AI personalization emerged as a primary driver of improvement.
 This impact was most transformative for lower-performing students, who saw a significant 'performance lift, effectively narrowing the achievement gap.
 By optimizing the quality of study rather than just the quantity, the AI successfully neutralized external challenges like distractions and varying learning styles,
 proving that personalized digital guidance is a powerful tool for elevating overall student outcomes.
-At the finale, We do recommend using AI but with caution just for your academic advantage and not to rely on it."""
+At the finale, We do recommend using AI but with caution just for your academic advantage and not to rely on it.
+"""
                 )
 st.divider()
 
