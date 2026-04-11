@@ -155,7 +155,7 @@ col4.metric("Avg Modules Completed", round(filtered_df['completed_modules'].mean
 # questions & answers
 tab_ai, tab_behavior, tab_st_factors = st.tabs(["AI impact", "Learning behavior", "Student factors"])
 with tab_ai :
-    t1, t2, t3, t4 ,t10 = st.tabs(["Question 1","Question 2","Question 3","Question 4","Question 5"])
+    t1, t2, t3, t4 ,t5 = st.tabs(["Question 1","Question 2","Question 3","Question 4","Question 5"])
     with t1 :
         st.subheader(" Question 1 :How Does different frequency of ai tools usage levels vary in the final score?")
         with st.container(border = True) :
@@ -224,7 +224,7 @@ with tab_ai :
                     )
                 st.info('The graph shows that students who followed the AI recommendation achieved a slightly higher average score than those who did not.')
 
-    with t10 :
+    with t5 :
         st.subheader(" Question 5 :Which Type of students that uses AI personalized paths and recommendations get affected the most,The low performance students or the higher performing students?")
         with st.container(border = True):
             col1, col2 = st.columns([1,1])
@@ -242,8 +242,8 @@ with tab_ai :
                 st.info('The AI-recommended path provides a significant performance boost for "Low Performers," while "High Performers" maintain their already high scores little difference.')
 
 with tab_behavior :
-    t5, t6, t8 = st.tabs(["Question 6","Question 7","Question 8"])
-    with t5:
+    t6, t7, t8 = st.tabs(["Question 6","Question 7","Question 8"])
+    with t6:
         st.subheader(" Question 6 :Which Learning Style completes more Difficult Modules and faster?")
         with st.container(border = True):
             col1, col2= st.columns([1,1])
@@ -260,7 +260,7 @@ with tab_behavior :
                 )
                 st.info('Kinesthetic learners complete the highest number of hard modules,even though all styles spent roughly the same time on the modules.')
 
-    with t6 :
+    with t7 :
         if not filtered_df.empty:
             best_style = filtered_df.groupby('learning_style')['completed_modules'].mean().idxmax()
             diffs = ", ".join(filtered_df['contextual_difficulty_level'].unique())
@@ -300,8 +300,8 @@ with tab_behavior :
                 st.info('The horizontal red line shows that spending more time does not result in a higher grade.')
 
 with tab_st_factors :
-    t7, t9 = st.tabs(["Question 9", "Question 10"])
-    with t7 :
+    t9, t10 = st.tabs(["Question 9", "Question 10"])
+    with t9 :
         st.subheader(" Question 9 :Compare previous average grades (GPA) with final (GPA) in the dataset.")
         with st.container(border = True):
             col1, col2 = st.columns([1,1])
@@ -318,7 +318,7 @@ with tab_st_factors :
                     )
                 st.info('The flat regression line and scattered points indicate that there is almost no correlation between a students past GPA and their current GPA in this dataset.')
 
-    with t9 :
+    with t10 :
         st.subheader(" Question 10 :At what Age do Distraction Events have the most negative impact on the Final Performance Label ?")
         with st.container(border = True):
             col1, col2 = st.columns([1,1])
