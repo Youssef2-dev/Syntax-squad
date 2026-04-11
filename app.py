@@ -181,7 +181,12 @@ with tab_ai :
                 st.pyplot(create_fig2(filtered_df))
             with col2:
                 st.space()
-                st.text('This graph compares student performance across two different stages: the initial quiz accuracy and the final assessment score, To see if actually following AI recommendations makes a difference.')
+                st.text(
+                    '''
+                    This graph compares student performance across two different stages: the initial quiz accuracy and the final assessment score, To see if actually following AI recommendations makes a difference.
+                    The middle horizontal line is the median, the box holds the middle 50% of scores, and each dot represents an individual student's result.
+                    '''
+                )
                 st.info('There is a noticable upward shift in performance, which means taking the recommended AI path actually boosts the performance.')
     
     with t3 :
@@ -193,7 +198,13 @@ with tab_ai :
                 st.pyplot(create_fig3(filtered_df))
             with col2:
                 st.space()
-                st.text('This graph uses a violin plot combined with a swarm plot to show the density and distribution of final scores. It means to show if the students how uses AI really get a positive impact.')
+                st.text(
+                    '''
+                This graph uses a violin plot combined with a swarm plot to show the density and distribution of final scores.
+                It means to show if the students how uses AI really get a positive impact.
+                The height shows the score achieved, while the width of the colored shape tells you where most people's results are clustered.
+                    '''
+                )
                 st.info('Students who followed the AI path show a higher median academic score.')
 
     with t4 :
@@ -204,7 +215,12 @@ with tab_ai :
                 st.markdown('Answer : Another analysis on AI vs Final score')
                 st.pyplot(create_fig4(filtered_df))
             with col2:
-                st.text('This bar plot compares the average final quiz scores between students who followed the AI-recommended path and those who did not.')
+                st.text(
+                    '''
+                    This bar plot compares the average final quiz scores between students who followed the AI-recommended path and those who did not.
+                    The bar heights show the average score for each group, while the thin vertical lines indicate the range of variation or uncertainty in those results.
+                    '''
+                    )
                 st.info('The graph shows that students who followed the AI recommendation achieved a slightly higher average score than those who did not.')
 
     with t10 :
@@ -215,7 +231,13 @@ with tab_ai :
                 st.markdown("Answer : AI effect on different levels of performing students")
                 st.pyplot(create_fig10(filtered_df))
             with col2:
-                st.text("This bar chart compares the performance lift between a student's previous GPA and their current GPA after following the AI-recommended path. It shows the effect of AI on different levels of performer students.")
+                st.text(
+                    """
+                    This bar chart compares the performance lift between a student's previous GPA and their current GPA after following the AI-recommended path.
+                    It shows the effect of AI on different levels of performer students.
+                    Compare the heights of the blue and green bars to see the GPA change for each group, with the thin vertical lines showing how much the data varies.
+                    """
+                    )
                 st.info('The AI-recommended path provides a significant performance boost for "Low Performers," while "High Performers" maintain their already high scores little difference.')
 
 with tab_behavior :
@@ -228,7 +250,13 @@ with tab_behavior :
                 st.markdown("Answer : Time taken for hard modules")
                 st.pyplot(create_fig5(filtered_df, difficulty))
             with col2:
-                st.text('These graphs compare how different learning styles handle difficult coursework by measuring both volume and speed.')
+                st.text(
+                    '''
+                    These graphs compare how different learning styles handle difficult coursework by measuring both volume and speed.
+                    Higher bars show a greater quantity or average time for each group,
+                    while the thin vertical lines indicate the range of variation in the timing data.
+                    '''
+                )
                 st.info('Kinesthetic learners complete the highest number of hard modules,even though all styles spent roughly the same time on the modules.')
 
     with t6 :
@@ -245,7 +273,13 @@ with tab_behavior :
                 st.markdown("Answer : Learning styles and different modules")
                 st.pyplot(create_fig6(filtered_df))
             with col2:
-                st.text('This point plot tracks the average number of modules completed across different difficulty levels for each learning style.')
+                st.text(
+                    '''
+                    This point plot tracks the average number of modules completed across different difficulty levels for each learning style.
+                    Follow the lines to see how completion rates change as difficulty increases,
+                    while the vertical bars show the range of variation for each learning style.
+                    '''
+                    )
                 st.info(f'At the {diffs} difficulty level, {best_style} learners complete more modules on average than the rest.')
 
     with t8 :
@@ -256,7 +290,12 @@ with tab_behavior :
                 st.markdown("Answer : The relation of time per module with the final score")
                 st.pyplot(create_fig8(filtered_df))
             with col2:
-                st.text("This graph shows if the amount of time spent on learning modules makes a difference in the student's final assessment performance.")
+                st.text(
+                    """
+                    This graph shows if the amount of time spent on learning modules makes a difference in the student's final assessment performance.
+                    Each dot shows an individual's result, and the flat red line indicates that spending more time does not lead to a higher score.
+                    """
+                    )
                 st.info('The horizontal red line shows that spending more time does not result in a higher grade.')
 
 with tab_st_factors :
@@ -269,7 +308,13 @@ with tab_st_factors :
                 st.markdown("Answer : Change of gpa previous vs current")
                 st.pyplot(create_fig7(filtered_df))
             with col2:
-                st.text("This joint plot explores the correlation between a student's previous GPA and their current GPA using a scatter plot and regression line.")
+                st.text(
+                    """
+                    This joint plot explores the correlation between a student's previous GPA and their current GPA using a scatter plot and regression line.
+                    Each dot represents a student's relationship between past and current GPA,
+                    while the bars on the edges show how many students fall into each specific GPA range.
+                    """
+                    )
                 st.info('The flat regression line and scattered points indicate that there is almost no correlation between a students past GPA and their current GPA in this dataset.')
 
     with t9 :
@@ -280,7 +325,12 @@ with tab_st_factors :
                 st.markdown("Answer : Distractions and Age impact on scores")
                 st.pyplot(create_fig9(filtered_df))
             with col2 :
-                st.text('This faceted regression plot examines how the frequency of distraction events affects final assessment scores.')
+                st.text(
+                    '''
+                    This faceted regression plot examines how the frequency of distraction events affects final assessment scores.
+                    Check if the red line in each age box slopes up or down to see how distractions affect scores for that specific age group.
+                    '''
+                    )
                 st.info('The impact of distractions is highly variable by age, showing slight positive correlations for 18 and 22-year-olds, but negative correlations for ages 20, 23, and 24.')
 
 # /questions & answers
