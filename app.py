@@ -164,7 +164,12 @@ with tab_ai :
                 st.pyplot(create_fig1(filtered_df))
             with col2 :
                 st.space()
-                st.text('This graph visualizes the distribution of quiz scores between students who followed an AI-recommended learning path and those who did not.')
+                st.text(
+                '''
+                    This graph visualizes the distribution of quiz scores between students who followed an AI-recommended learning path and those who did not.
+                    The middle horizontal line shows the median score, while the box and whiskers represent the spread and total range of the results.
+                '''
+                       )
                 st.info('Students who followed the AI-recommended path achieved a slightly higher median score and a higher upper-quartile range than those who did not.')
 
     with t2 :
