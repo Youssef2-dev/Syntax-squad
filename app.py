@@ -374,7 +374,7 @@ with col2 :
     st.markdown("### :blue-background[:blue[On LinkedIn:]]")
     st.link_button('- Eissa Amr','https://www.linkedin.com/in/eissa-amr-abdelsalam')
     st.link_button('- Bilal Ahmed','https://www.linkedin.com/in/bilal-ahmed-0271a338a')
-    st.link_button('- Ziad Ashraf','https://www.linkedin.com/in/zeyad-ashraf-aboelhamd-867a38364/')
+    st.link_button('- Ziad Ashraf','https://www.linkedin.com/in/zeyad-ashraf-aboelhamd-867a38364')
     st.link_button('- Youssef Mohamed','https://www.linkedin.com/in/youssef-mohamed-5404a73b3')
     st.link_button('- Mohamed Tag','')
     st.link_button('- Ali Mostafa','https://www.linkedin.com/in/ali-eldemery-7356902a9  ')
