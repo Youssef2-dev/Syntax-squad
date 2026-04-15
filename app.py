@@ -40,8 +40,8 @@ def load_and_clean_data() :
     df_cleaned['education_level'] = df_cleaned['education_level'].replace({'PG': 'Postgraduate', 'UG': 'Undergraduate'})
     df_cleaned['learning_style'] = df_cleaned['learning_style'].replace({'Kinesthetic': 'Practical'})
     df_cleaned['student_id'] = df_cleaned['student_id'].str.replace('STU', '').astype(int)
-    df_cleaned['recommended_path'] = df_cleaned['recommended_path'].str.replace('→', '-', regex=False)
-    df_cleaned['actual_path_followed'] = df_cleaned['actual_path_followed'].str.replace('→', '-', regex=False)
+    df_cleaned['recommended_path'] = df_cleaned['recommended_path'].str.replace('→', '-')
+    df_cleaned['actual_path_followed'] = df_cleaned['actual_path_followed'].str.replace('→', '-')
     df_cleaned['current_gpa'] = df_cleaned['final_assessment_score'] / 100 * 4 
     df_cleaned['Followed_AI_Path'] = (df_cleaned['actual_path_followed'] == df_cleaned['recommended_path']).map({True: 'Yes', False: 'No'})
     # /data cleaning⬅
