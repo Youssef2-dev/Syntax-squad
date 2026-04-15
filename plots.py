@@ -153,10 +153,7 @@ def create_fig7(filtered_df):
         x='previous_gpa',
         y='current_gpa',
         kind='reg',
-        color='purple',
-        height=7,
-        scatter_kws={'alpha': 0.5, 's': 20},   # Key optimization
-        line_kws={'linewidth': 2.5}
+        color='purple'
     )
     
     grid7.fig.suptitle('Relationship: Past GPA vs. Current GPA', y=1.02)
