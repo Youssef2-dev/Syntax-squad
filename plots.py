@@ -3,8 +3,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import streamlit as st
 # /importing
-
+st.cache_data.clear()
 # visualization /plots
 # Q1 : How Does different frequency of ai tools usage levels vary in the final score?
 def create_fig1(filtered_df):
