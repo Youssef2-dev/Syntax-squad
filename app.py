@@ -2,8 +2,6 @@
 # Importing
 import streamlit as st  # Used to build the web app
 import pandas as pd  # Used for data manipulation and analysis
-import matplotlib.pyplot as plt  # Used for plotting graphs
-import seaborn as sns  # Used for advanced visualizations
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent))
