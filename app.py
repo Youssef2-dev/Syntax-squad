@@ -19,7 +19,7 @@ from plots import (
     create_fig9
 )
 # /Importing
-st.cache_data.clear()
+
 # page configuration
 st.set_page_config(
     page_title="AI personalized learning", 
